@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    background-color: rgba(225,225,225,0.26);
+    font-family: "Playfair Display", serif; 
+    width: 100%;
+   
+    
+    background: #222f35;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+}
+.title-container{
+    text-align: center;
+
+}
+form{
+    
+    max-width: 100%;
+    padding: 50px;
+     border-radius: 10px;
+      border: 1px solid #ddd;
+}
+.input-container{
+    display: flex;
+    
+    margin-bottom: 20px;
+   
+
+}
+textarea{
+    resize: none;
+    margin: 1rem;
+    background: rgba(31, 31, 57, 1);
+    color: white;
+}
+input{
+    height: 40px;
+    border-radius: 5px;
+    width: 25rem;
+    border: #222f35;
+    color: white;
+    margin: 1rem;
+    background: rgba(31, 31, 57, 1);
+   
+}
+input::placeholder{
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.remeber-me-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+     
+}
+button{
+    padding: 15px 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white ;
+    font-size: 16px;
+    transition: 2s red ease;
+}
+button:hover{
+    background-color: azure;
+    color: black;
+    box-shadow:0 0 10px #06d6ff;
+    opacity: 0.3;
+    
+}
+.message-success{
+    z-index: 1;
+    background: #D4EDDA;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD66E;
+    border-radius: 4px;
+}
+.message-error{
+    z-index: 1;
+    border: 2px solid red;
+    background: #FFF3CD;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #FFA502;
+    color: red;
+    border-radius: 4px;
+  }
+  span{
+    color: #06d6ff;
+  }
+  .logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+  }
+  a{
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+  }
+  @media (max-width: 600px){
+    main{
+        height: auto;
+        display: flex;
+        width: max-content;
+        width: 150vw;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    form{
+        margin: 10px;
+        max-height: 100vh;
+        border: none;
+        
+
+    }
+    input,
+    textarea{
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+  }
